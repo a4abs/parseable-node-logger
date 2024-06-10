@@ -1,4 +1,4 @@
-// packages/my-express-app/logger.js
+// packages/express-server/logger.js
 const { createLogger, format, transports } = require("winston");
 const WinstonParseableTransport = require("./parseable-transport");
 
