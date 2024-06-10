@@ -1,0 +1,6 @@
+{
+  "editor.fontFamily": "Operator Mono Lig, 'monospace', monospace, 'Droid Sans Fallback'",
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "cSpell.words": ["parseable"]
+}
