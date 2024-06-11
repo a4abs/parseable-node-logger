@@ -19,11 +19,15 @@ const useGlobalEventListener = (loggerService) => {
         componentName = element.dataset.componentName;
       }
 
+      const { innerText, className } = event.target;
+
       const metadata = {
-        "x-event-type": "click",
-        "x-component-name": componentName,
-        "x-app-version": packageJson.version,
-        "x-page-url": location.pathname,
+        event: "click",
+        component: componentName,
+        class: className,
+        content: innerText,
+        appVersion: packageJson.version,
+        url: location.pathname,
       };
 
       logger.trackEvent("click", metadata);
